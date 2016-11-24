@@ -129,22 +129,28 @@ namespace P5_8_2016
             return null;
         }
 
-        public static int CountNumberWords(string[] books, string wordPunctuation)
+        public static int CountNumberWords(string[] books, string wordPunctuation, out double total)
         {
             string allBooks = string.Join("\n", books);
             string[] parts = Regex.Split(allBooks, wordPunctuation);
             //all tryParse methods require results
             int result = 0;
             double doubleResult = 0;
-
+            total = 0;
             int count = 0;
             foreach (string word in parts)
             {
                 if (int.TryParse(word, out result))
+                {
+                    total += result;
                     count++;
+                }
                 else
-                    if (double.TryParse(word, out doubleResult))
+                if (double.TryParse(word, out doubleResult))
+                {
+                    total += doubleResult;
                     count++;
+                }
             }
             return count;
         }
@@ -172,7 +178,15 @@ namespace P5_8_2016
         {
             using (StreamWriter writer = new StreamWriter(@fName))
             {
-                writer.Write(LongestEndMatchesBeginnings(books, punctuation));
+                writer.WriteLine("Longest fragment in which one word ending matches nexts words beginning (lines = first char):\r\n");
+                writer.WriteLine(LongestEndMatchesBeginnings(books, punctuation).Replace("\n","\r\n"));
+                double total = 0;
+                writer.WriteLine();
+                writer.WriteLine("Number of words that are numbers: ");
+                writer.WriteLine(CountNumberWords(books, punctuation, out total));
+                writer.WriteLine();
+                writer.WriteLine("Their total:");
+                writer.WriteLine(total);
             }
         }
 

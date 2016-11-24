@@ -1,2 +1,10 @@
+Longest fragment in which one word ending matches nexts words beginning (lines = first char):
+
 3 Pusnys sutemo; obuolys sapnus,
 4 Saulelydis sniege
+
+Number of words that are numbers: 
+3
+
+Their total:
+6260
