@@ -1,0 +1,6 @@
+F:\University\Labaratoriniai\P5_8_2016\P5_8_2016\P5_8_2016\bin\Debug\P5_8_2016.exe.config
+F:\University\Labaratoriniai\P5_8_2016\P5_8_2016\P5_8_2016\bin\Debug\P5_8_2016.exe
+F:\University\Labaratoriniai\P5_8_2016\P5_8_2016\P5_8_2016\bin\Debug\P5_8_2016.pdb
+F:\University\Labaratoriniai\P5_8_2016\P5_8_2016\P5_8_2016\obj\Debug\P5_8_2016.csprojResolveAssemblyReference.cache
+F:\University\Labaratoriniai\P5_8_2016\P5_8_2016\P5_8_2016\obj\Debug\P5_8_2016.exe
+F:\University\Labaratoriniai\P5_8_2016\P5_8_2016\P5_8_2016\obj\Debug\P5_8_2016.pdb
